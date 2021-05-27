@@ -446,30 +446,14 @@ nav#dot-nav.red a:first-child {
   width: 40%;
   height: 50%;
   z-index: 2;
-  animation: gogo 15s infinite alternate-reverse;
+  animation: gogo 35s linear infinite;
   transition: 15s;
 }@keyframes gogo{
-  0%{transform: translateX(1500px) translateY(2px);}
-  100%{transform: translateX(-10px) translateY(2px);}
-}
-.smokel2{
-  width: 20%;
- height: 25%;
- position: absolute;
- bottom: -5%;
- left:-5%;
- transform: rotate(230deg);
- animation:smokee 2s infinite alternate;
- z-index: 2;
- animation: smokee 15s infinite alternate-reverse;
-  transition: 15s;
-}
-@keyframes smokee{
- 0%{opacity: 20%;transform: translateX(1500px) translateY(2px) rotate(230deg);}
- 25%{opacity: 25%;}
- 50%{opacity: 50%;}
- 75%{opacity: 80%;}
- 100%{opacity: 100%;transform: translateX(-10px) translateY(2px) rotate(230deg) scale(1.1);}
+  0%{left: -40%;}
+  48%{transform: rotateY(0deg);}
+  50%{left: 100%; transform: rotateY(180deg);}
+  98%{transform: rotateY(180deg);}
+  100%{left: -40%; transform: rotateY(0deg);}
 }
 
 .goon{
