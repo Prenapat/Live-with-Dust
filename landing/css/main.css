@@ -2726,9 +2726,14 @@ cursor: url(https://cur.cursors-4u.net/games/gam-4/gam308.cur), auto !important;
 }
 .a_cloud{
   position: absolute;
+  opacity: 85%;
+  filter: brightness(1.35);
+}@keyframes cloudmove{
+  0%{transform: translateX(30px) translateY(5px);}
+  100%{transform: translateX(10px) translateY(5px);}
 }
 #page11{
-  background:#70c4a2;
+  background:#71c4a3;
   position: relative;
   overflow: hidden;
   height: 40vh;
